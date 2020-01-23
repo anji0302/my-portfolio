@@ -1,0 +1,36 @@
+// @mixin sticky-column($column, $box-color:#dee2e6, $tr-hover-color: #ececec, $bg-color: white) {
+//     $previous-column: $column - 1;
+  
+//     // remove border of previous column if any
+//     @if ($previous-column > 0) {
+//       th:nth-of-type(#{ $previous-column}) {
+//         border-right: 0;
+//       }
+//     }
+  
+//     th:nth-of-type(#{$column}) {
+//       background-color: $bg-color;
+//       position: sticky;
+//       left: 0px;
+//       border-left: 0;
+//       // box-shadow: 1px 2px 5px -1px rgba(0, 0, 0, 0.2);
+//       box-shadow: inset 1px 0px 0px 0px $box-color, 1px 1px 0px 0px $box-color !important;
+//     }
+  
+//     tbody td:nth-of-type(#{$column}) {
+//       background-color: $bg-color;
+//       position: sticky;
+//       left: 0px;
+//       box-shadow: 0px 1px 0px 0 $box-color, 1px 0px 0px 0 $box-color;
+//     }
+  
+//     tr:hover {
+//       td:nth-of-type(#{$column}) {
+//         background-color:  $tr-hover-color;
+//       }
+//     }
+  
+//     .full-screen-table .table thead th:nth-of-type(#{$column}) {
+//       z-index: 2 !important;
+//     }
+//   }
