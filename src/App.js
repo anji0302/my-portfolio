@@ -1,15 +1,15 @@
 import React from "react";
 import "./assets/scss/App.scss";
 
-import Header from "./components/Header";
-// import Home from "./components/Home";
-// import Footer from "./components/Footer";
+import RouterClass from "./components/Router";
+import Home from "./components/Home";
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      {/* <Footer /> */}
+      <RouterClass>
+        <Home />
+      </RouterClass>
     </div>
   );
 }

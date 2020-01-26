@@ -2,3 +2,117 @@
 @import "_mixins.scss";
 @import "_utilities.scss";
 @import "default.scss";
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: $fixed-height;
+  background-color: $dark;
+
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 2px 2px -2px $primary;
+  z-index: 1;
+}
+
+.Home {
+  .hero {
+    // height: calc(85vh - #{$fixed-height});
+    height: calc(100vh - #{$fixed-height});
+
+    .bg-img {
+      position: absolute;
+      top: $fixed-height;
+      left: 0;
+      height: calc(100vh - #{$fixed-height});
+      width: 100%;
+      background-image: url("../images/code.png");
+      background-color: $dark;
+      background-repeat: no-repeat;
+      z-index: -1;
+      opacity: 0.35;
+    }
+
+    .title {
+      position: relative;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+
+      .name {
+        font-size: 1.5rem;
+        color: $primary;
+        line-height: 1;
+      }
+      .profession {
+        font-size: 1.1rem;
+        color: $primary;
+      }
+      .info {
+        margin: 10px 0;
+        max-width: 750px;
+        opacity: 0.8;
+      }
+      .learn-more {
+        text-decoration: underline;
+        font-size: 1.25rem;
+        opacity: 0.6;
+        position: absolute;
+        bottom: 10px;
+        padding: 10px;
+        cursor: pointer;
+
+        &:hover {
+          opacity: 1;
+          color: rgba($primary, 0.7);
+        }
+      }
+    }
+  }
+}
+
+.about-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .cards {
+    color: $dark;
+    .card {
+      width: 18rem;
+    }
+  }
+
+  .card-text {
+    opacity: 0.8;
+  }
+}
+
+@media (min-width: 576px) {
+  .Home {
+    .hero {
+      .title .name {
+        font-size: 2.5rem;
+      }
+      .title .profession {
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+@media (min-width: 768px) {
+  .Home {
+    .hero {
+      .title .name {
+        font-size: 3.5rem;
+      }
+      .title .profession {
+        font-size: 2rem;
+      }
+    }
+  }
+}

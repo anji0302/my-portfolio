@@ -1,11 +1,14 @@
 /* Variables that will be reused across different styles - Change of the variables can change the entire Application theme */
 
-$primary: #61dafb; /*Primary Color - Will be used for header background and other components either as background or text color*/
-$accent: #FF6F61; /*Living Coral Theme - This will be used as an accent color */
-$light: hsl(210,16%,82%);
+$fixed-height: 50px;
 
+$primary: #61dafb; //rgb(153, 80, 218);
 
-$dark: #282c34;
+// $accent: #ff6f61;
+// $light: hsl(210, 16%, 82%);
+
+$dark: #2b2b2b;
+$dark-light: rgba(194, 165, 165, 0.18);
 $white: white;
 
 // /*Color palette with different shades of primary colors*/

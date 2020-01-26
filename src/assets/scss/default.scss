@@ -1,6 +1,26 @@
 @import "_variables.scss";
 
+* {
+  box-sizing: border-box;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   background-color: $dark;
   color: $white;
+
+  font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+a {
+  color: $white;
+
+  &:hover {
+    color: rgba($primary, 0.7);
+  }
+}
+
+.routes {
+  padding-top: $fixed-height;
 }
