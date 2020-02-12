@@ -59,6 +59,7 @@ function Home() {
       </section>
 
       <div><Link to="/movies">Movie Project</Link></div>
+      <div><Link to="/ddc">DDC Project</Link></div>
 
     </div>
   );

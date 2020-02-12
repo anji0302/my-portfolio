@@ -6,6 +6,7 @@ import Header from "./Header";
 import Home from "./Home";
 import Movies from "./movies-project/Movies";
 import MovieDetails from "./movies-project/MovieDetails";
+import DDC_Home from "./ddc-project/DDC_Home";
 
 function RouterClass() {
   return (
@@ -15,6 +16,7 @@ function RouterClass() {
 
         <Switch>
           <Route path="/" exact component={Home} />
+          <Route path="/ddc" component={DDC_Home} />
           <Route path="/movies" component={Movies} />
           <Route path="/movie/:id" component={MovieDetails} />
         </Switch>

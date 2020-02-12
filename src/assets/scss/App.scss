@@ -30,6 +30,8 @@
       background-image: url("../images/code.png");
       background-color: $dark;
       background-repeat: no-repeat;
+      background-size: cover;
+      background-image: linear-gradient(to right top, #6d327c, #485da6, #00a1ba, #00bf98, #36c486);
       z-index: -1;
       opacity: 0.35;
     }
